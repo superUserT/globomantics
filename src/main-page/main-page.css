@@ -1,0 +1,14 @@
+.logo {
+  height: 150px;
+}
+
+.subtitle {
+  font-size: x-large;
+  font-style: italic;
+  color: blueviolet;
+}
+
+.featuredHouse {
+  border-radius: 2px;
+  background-color: peachpuff;
+}
