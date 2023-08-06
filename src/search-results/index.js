@@ -18,3 +18,5 @@ const SearchResults = ({ allHouses }) => {
     </div>
     );
 };
+
+export default SearchResults;

@@ -6,6 +6,7 @@ import Header from './header';
 import FeaturedHouse from './featured-house';
 import SearchResultsRow from '../search-results/search-results-row';
 import HouseFilter from './house-filter';
+import HouseFromQuery from '../house/HouseFromQuery';
 
 function App() {
   //declaring an array containing state value and setting of thart state
@@ -41,10 +42,16 @@ const [allHouses, setAllHouses] = useState([]);
     <div className='container'>
       <Header subtitle="Providing Affordable housing in South Africa" />
       <HouseFilter allHouses={allHouses} />
+
       <Switch>
         <Route path="/searchresults/:country">
           <SearchResultsRow allHouses={allHouses} />
         </Route>
+
+        <Route path="/house/:id">
+          <HouseFromQuery allHouses={allHouses} />
+        </Route>
+        
         <Route path="/">
           <FeaturedHouse house={featuredHouse}></FeaturedHouse>
         </Route>
