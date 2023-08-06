@@ -26,15 +26,15 @@
     {
         "id": 4,
         "address": "Meel Kade 321, Navilsig",
-        "country": "TSouth Africa",
+        "country": "Botswana",
         "description": "Discreetly situated a unique two storey period home enviably located on the corner of Krom Road and Recht Road offering seclusion and privacy. The house features a magnificent double height reception room with doors leading directly out onto a charming courtyard garden.",
         "price": 259500,
         "photo": "4"
     },
     {
         "id": 5,
-        "address": "Oude Gracht 32, Pretoria",
-        "country": "South Africa",
+        "address": "Oude Gracht 32, Maseru",
+        "country": "Lesotho",
         "description": "This luxurious three bedroom flat is contemporary in style and benefits from the use of a gymnasium and a reserved underground parking space.",
         "price": 400500,
         "photo": "5"

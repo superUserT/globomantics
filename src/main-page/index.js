@@ -4,6 +4,8 @@ import logo from './logo.svg';
 import './main-page.css';
 import Header from './header';
 import FeaturedHouse from './featured-house';
+import SearchResultsRow from '../search-results/search-results-row';
+import HouseFilter from './house-filter';
 
 function App() {
   //declaring an array containing state value and setting of thart state
@@ -38,8 +40,11 @@ const [allHouses, setAllHouses] = useState([]);
     <Router>
     <div className='container'>
       <Header subtitle="Providing Affordable housing in South Africa" />
-
+      <HouseFilter allHouses={allHouses} />
       <Switch>
+        <Route path="/searchresults/:country">
+          <SearchResultsRow allHouses={allHouses} />
+        </Route>
         <Route path="/">
           <FeaturedHouse house={featuredHouse}></FeaturedHouse>
         </Route>
